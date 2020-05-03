@@ -1,3 +1,12 @@
+# Data Generator Guidelines
+Execute Following Command to Generate the Data
+java -jar /path/to/ClickStreamDataGenerator.java date numberOfRecords batchSize /path/to/output/dir
+E.g : java -jar ClickStreamDataGenerator.java 01-10-2020 1000000 100000 /home/user/clickstream/input
+> date = DD-MM-YYYY , is the only acceptable format
+> numberOfRecords , is a valid positive integer
+> batchSize , is a valid positive integer , ideal batch size should be set as maximum as possible in accordance with java heap memory allocation.
+> path , is an existing path with write permissions to the user , path must be separated by forward slash '/' irrespective of the OS.
+
 # Add Following Variables into ~/.bashrc
 export CLICKSTREAM_INPUT_DIR=$HOME/clickstream/input
 export CLICKSTREAM_PROCESSED_DIR=$HOME/clickstream/processed
