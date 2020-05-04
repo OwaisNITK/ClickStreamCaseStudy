@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Data Loading Started at $(date +"%T")"
 . /home/impadmin/.bashrc
 

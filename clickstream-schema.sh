@@ -1,3 +1,4 @@
+#!/bin/bash
 # This script generates the schema required by clickstream application
 echo "Schema Creation Started at $(date +"%T")"
 

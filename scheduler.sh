@@ -1,7 +1,7 @@
 #!/bin/bash
 CURRENT_DATE=$(date +"%d-%m-%Y")
-NO_OF_RECORDS=5000
-BATCH_SIZE=1000
+NO_OF_RECORDS=100000
+BATCH_SIZE=200000
 OUTPUT_PATH=/home/impadmin/clickstream/input/ 
 JAR_PATH=/home/impadmin/clickstream/datagenerator
 

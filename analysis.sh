@@ -25,8 +25,5 @@ echo "" >> $ANALYSIS_REPORT_DIR/$FILE_NAME
 echo "-> Following are the analysis of shopping from diffrent locations today" >> $ANALYSIS_REPORT_DIR/$FILE_NAME
 hive -e "SELECT location,COUNT(*) AS occurence FROM clickstream.activity_partitioned WHERE logdate='$CURRENT_DATE' AND action='checkout' GROUP BY location order by occurence DESC" >> $ANALYSIS_REPORT_DIR/$FILE_NAME
 echo "" >> $ANALYSIS_REPORT_DIR/$FILE_NAME
-echo "" >> $ANALYSIS_REPORT_DIR/$FILE_NAME
-echo "" >> $ANALYSIS_REPORT_DIR/$FILE_NAME
-echo "" >> $ANALYSIS_REPORT_DIR/$FILE_NAME
 
 echo "Analysis Finished"

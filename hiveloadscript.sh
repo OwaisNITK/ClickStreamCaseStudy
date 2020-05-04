@@ -1,3 +1,4 @@
+#!/bin/bash
 # This file demonstrate how to use hive -e command to execute hive queries from shell
 # The purpose of this file is to load data from hdfs into hive table
 echo "Data Load into hive started at $(date +"%T")"
