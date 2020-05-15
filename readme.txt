@@ -33,3 +33,16 @@ chmod -R home/{user}/clickstream/processed
 
 4) Which location has the most number of buyers (most occurence of action=checkout)
 SELECT location,COUNT(*) AS occurence FROM activity_partitioned WHERE action='checkout' GROUP BY location order by occurence DESC;
+
+5)
+select location,action,item,cnt,rank
+from
+	(select * ,rank() OVER(PARTITION BY location ORDER BY cnt desc) rank
+	from
+		(select logDate,location,action,reverse(SPLIT( REVERSE( url ), "/" )[0]) item,count(url) as cnt 
+		from
+			activity_partitioned
+		where
+			action="view" 
+			group by logDate,location,action,reverse(SPLIT( REVERSE( url ), "/" )[0])) p ) l
+			where rank =1
