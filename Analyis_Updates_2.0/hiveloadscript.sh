@@ -23,8 +23,7 @@ fi
 
 # Loading Data from Local File System To Hive Tables
 echo "Loading Data Into Activity Table"
-hive -e "load data inpath '"$HDFS_FILE_PATH"/"$FILE_NAME"' into table clickstream.activity"
-hive -e "LOAD DATA LOCAL INPATH  ‘$LOCAL_FILE_PATH’ INTO TABLE clickstream.activity" 
+hive -e "LOAD DATA LOCAL INPATH '$LOCAL_FILE_PATH' INTO TABLE clickstream.activity" 
 
 # Moving Data File to Processed File Directory
 mv $LOCAL_FILE_PATH $PROCESSED_FILE_PATH/$PROCESSED_FILE_NAME
