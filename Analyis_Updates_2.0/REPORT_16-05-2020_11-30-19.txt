@@ -1,0 +1,28 @@
+Generating Report . . .
+
+-> Follwing is the most viewed item across the website considering all the records
+
+ITEM | VIEWS | RANK
+
+12	36	1
+
+-> Following are the location wise analysis of the most viewed item today
+
+LOCATION | ITEM | VIEWS | RANK
+
+ahemadabad	13	6	1
+bangalore	20	4	1
+bangalore	17	4	1
+chennai	19	3	1
+chennai	17	3	1
+chennai	18	3	1
+chennai	11	3	1
+delhi	6	5	1
+delhi	1	5	1
+hyderabad	4	4	1
+hyderabad	14	4	1
+hyderabad	8	4	1
+indore	12	5	1
+mumbai	20	5	1
+mumbai	9	5	1
+
